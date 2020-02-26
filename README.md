@@ -3,3 +3,8 @@ This is a self hested vpn on a untuntu web server. Most normal Vpn providers ask
 
 <h1><b>getting  a server</b></h1>
 The first is getting a  web server to host your vpn, i've used the digital ocean starter ubuntu server which comes ad 5$/month, but you can sign up with your <a href="https://education.github.com/packgithub">student account</a> and get 50$ digital ocean credit and host it for free.
+You can also use aws google webservices or any of other free cloud services to host it for free.
+
+For digital ocean:
+go to create a droplet
+<img href="https://aimabdurrahim.files.wordpress.com/2017/01/server-squid_http_port-3128.png?w=640">
