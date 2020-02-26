@@ -9,3 +9,16 @@ You can also use aws google webservices or any of other free cloud services to h
 
 1. Go to create a droplet
 <img src="https://github.com/skylanskylion/privatevpn/blob/master/Private%20vpn/Images/img1.png">
+select the lowest tier for 5$/month. Our vpn server doesnt require much resources so this should be more than enough to run it.
+<img src="https://github.com/skylanskylion/privatevpn/blob/master/Private%20vpn/Images/img2.png">
+Now you'll get a mail in your digital ocean registered email id with the login initials for your ubuntu server.
+It will look something like this.
+<img src="https://github.com/skylanskylion/privatevpn/blob/master/Private%20vpn/Images/img3.png">
+Now your web server is read for you to tinker with.
+Go to your digital ocean dashboard and copy the IP address.
+<img src="https://github.com/skylanskylion/privatevpn/blob/master/Private%20vpn/Images/img4.png">
+
+2. Accessing your ubuntu webserver
+<img src="https://github.com/skylanskylion/privatevpn/blob/master/Private%20vpn/Images/img5.png">
+
+Now to 
