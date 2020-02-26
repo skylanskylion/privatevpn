@@ -3,7 +3,7 @@ This is a self hested vpn on a untuntu web server. Most normal Vpn providers ask
 
 ## Using my vpn
 
-Download the <a href="https://openvpn.net/community-downloads/community">open vpn client</a> and import the guest.ovpn file.
+Download the <a href="https://openvpn.net/community-downloads/">open vpn client</a> and import the guest.ovpn file.
 Click on connect. You're now connected to a vpn and have changed your IP and geolocation!
 
 
@@ -79,7 +79,7 @@ You can also use aws google webservices or any of other free cloud services to h
 ## Setting up the VPN clients
 
 We will be using open vpn to access our vpn server. Download the latest open vpn client from the
-<a href="https://openvpn.net/community-downloads/community"> downloads page</a> or you can use
+<a href="https://openvpn.net/community-downloads/"> downloads page</a> or you can use
 the version that i've provided.
 
 Run the installer and install all the additonal tap adpaters that the installer asks you to.
