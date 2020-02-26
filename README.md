@@ -1,13 +1,20 @@
 # privatevpn
 This is a self hested vpn on a untuntu web server. Most normal Vpn providers ask for a premium for their services and you wont have no way of knowing that they wont sell your info to third parties. A self hosted vpn is cheaper and gives you the control of your datda. I've illustated the steps below on how to create your own private vpn and host it for free for the first 10 months.
 
+## Using my vpn
+
+Download the <a href="https://openvpn.net/community-downloads/community">open vpn client</a> and import the guest.ovpn file.
+Click on connect. You're now connected to a vpn and have changed your IP and geolocation!
+
+
+
 # getting  a server
 The first is getting a  web server to host your vpn, i've used the digital ocean starter ubuntu server which comes ad 5$/month, but you can sign up with your <a href="https://education.github.com/packgithub">student account</a> and get 50$ digital ocean credit and host it for free.
 You can also use aws google webservices or any of other free cloud services to host it for free.
 
 ## For digital ocean
 
-1. Go to create a droplet
+1. <u>Go to create a droplet</u>
 <img src="https://github.com/skylanskylion/privatevpn/blob/master/Private%20vpn/Images/img1.png">
 
   Select the lowest tier for 5$/month. Our vpn server doesnt require much resources so this should be more than enough to run it.
@@ -25,7 +32,7 @@ You can also use aws google webservices or any of other free cloud services to h
 
 <img src="https://github.com/skylanskylion/privatevpn/blob/master/Private%20vpn/Images/img4.png">
 
-2. Accessing your ubuntu webserver
+2. <u>Accessing your ubuntu webserver</u>
 
   Now to open the webserver, we're using putty for windows. Use can use ssh on a terminal if you have a mac or gnu/linux. Go to putty     website and <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">download putty</a>
   
@@ -49,7 +56,7 @@ You can also use aws google webservices or any of other free cloud services to h
   <img src="https://github.com/skylanskylion/privatevpn/blob/master/Private%20vpn/Images/img6.png">
   <img src="https://github.com/skylanskylion/privatevpn/blob/master/Private%20vpn/Images/img7.png">
   
-3. Setting up the vpn
+3. <u>Setting up the vpn</u>
 
   Type the following commands:
   
@@ -72,7 +79,39 @@ You can also use aws google webservices or any of other free cloud services to h
 ## Setting up the VPN clients
 
 We will be using open vpn to access our vpn server. Download the latest open vpn client from the
-<a href="https://openvpn.net/community-downloads/"community> downloads page</a> or you can use
+<a href="https://openvpn.net/community-downloads/community"> downloads page</a> or you can use
 the version that i've provided.
+
+Run the installer and install all the additonal tap adpaters that the installer asks you to.
+
+To download the vpn configuration file from our server we'll be pscp which is putty scp. It is used to copy files to and from webserves to desktop hosts. Go to <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">putty downloads site</a> and download the pscp.exe for your system. 
+
+To run pscp open cmd `cd <your directory with pscp download>` and press enter. This should open the pscp directory. Now type `pscp`
+and press enter. For e.g:
+
+<img src="https://github.com/skylanskylion/privatevpn/blob/master/Private%20vpn/Images/img13.png">
+
+To download the .ovpn cofig file type the code `pscp root@<your web server's ip address>/root/<profilename>.ovpn <your download
+directory>` For e.g for the guest cofig file, it will something like this.
+
+<img src="https://github.com/skylanskylion/privatevpn/blob/master/Private%20vpn/Images/img14.png">
+
+Now run <b>open vpn gui</b> and right click on import.
+
+<img src="https://github.com/skylanskylion/privatevpn/blob/master/Private%20vpn/Images/img10.png">
+
+Select the directory where you downloaded the .ovpn profile using pscp and click ok. Now right click on the open vpn icon in the windows tray again, and chose the profile. Click connect
+
+<img src="https://github.com/skylanskylion/privatevpn/blob/master/Private%20vpn/Images/img11.png">
+
+Its done now! You can see the toast that vpn is connected. Try checking your IP in the browser and your location, it will be changed
+
+<img src="https://github.com/skylanskylion/privatevpn/blob/master/Private%20vpn/Images/img12.png">
+
+The same .ovpn file can be imported in your phone or other clients on differenct operating systems. Have fun!
+
+## Thanks for reading and following through, if you wanna have a chat ping me anytime on <a href="t.me/skylanskylion">telegram</a>
+
+
   
   
