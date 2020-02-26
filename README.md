@@ -8,4 +8,4 @@ You can also use aws google webservices or any of other free cloud services to h
 ## For digital ocean
 
 1. Go to create a droplet
-<img src="https://aimabdurrahim.files.wordpress.com/2017/01/server-squid_http_port-3128.png?w=640">
+<img src="https://github.com/skylanskylion/privatevpn/blob/master/Private%20vpn/Images/img1.png">
