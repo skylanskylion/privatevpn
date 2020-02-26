@@ -27,12 +27,52 @@ You can also use aws google webservices or any of other free cloud services to h
 
 2. Accessing your ubuntu webserver
 
-<img src="https://github.com/skylanskylion/privatevpn/blob/master/Private%20vpn/Images/img5.png">
-
   Now to open the webserver, we're using putty for windows. Use can use ssh on a terminal if you have a mac or gnu/linux. Go to putty     website and <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">download putty</a>
   
   Now run the installer and open putty. You'll be greeted with the login screen. Put in the IP address of the server and click open.
+
+<img src="https://github.com/skylanskylion/privatevpn/blob/master/Private%20vpn/Images/img5.png">
+
+  For the first time you can enter the username as <b>root</b> and the password that you get in your mail. You dont need to copy it all. 
+  YOu can click mouse button to paste the password in the putty terminal. You'll be asked to change your default password. Enter your
+  password again and create a new password.
   
-  <img src="https://github.com/skylanskylion/privatevpn/blob/master/Private%20vpn/Images/img5.png">
+  Now you're ready to go. Its good convention to update your system the first time so run the following commands:
+  
+  `sudo apt update -y` press enter and type your password.
+  
+  `sudo apt upgrade -y` and repeat
+  
+  Now I recommend you type `reboot` and restart your ubuntu webserver. The putty client will show connection stopped. Wait a few seconds
+  and open putty again. Login in to your webserver.
+  
+  <img src="https://github.com/skylanskylion/privatevpn/blob/master/Private%20vpn/Images/img6.png">
+  <img src="https://github.com/skylanskylion/privatevpn/blob/master/Private%20vpn/Images/img7.png">
+  
+3. Setting up the vpn
+
+  Type the following commands:
+  
+  `wget https://git.io/vpn -O openvpn-install.sh && bash openvpn-install.sh`
+  
+  <img src="https://github.com/skylanskylion/privatevpn/blob/master/Private%20vpn/Images/img8.png">
+  
+  Run the script and follow the instructions. When it asks for a client name, you can put in anything like, desktop or phone. This 
+  client allows you to make 250 different clients.
+  
+   <img src="https://github.com/skylanskylion/privatevpn/blob/master/Private%20vpn/Images/img9.png">
+   
+  Now type the following command:
+  
+  `chmod 777 openvpn-install.sh`
+  
+  To to create more profiles you can type `./openvpn-install.sh` and remove or add more profiles. You can also change the configuration
+  if you want to but it is not recommended.
+  
+## Setting up the VPN clients
+
+We will be using open vpn to access our vpn server. Download the latest open vpn client from the
+<a href="https://openvpn.net/community-downloads/"community> downloads page</a> or you can use
+the version that i've provided.
   
   
